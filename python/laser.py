@@ -1,5 +1,6 @@
 # import the random library, to set the initial position of the rock.
 import random
+import pgzrun
 
 # Set the size of the window
 WIDTH = 600
@@ -225,3 +226,7 @@ def update():
     # Set the timer to wait for a 1/5 of a second before removing the
     # destroyed rock from view.
     clock.schedule(removeRock, 0.2)
+
+
+# Run the game loop
+pgzrun.go()
